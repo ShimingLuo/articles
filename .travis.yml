@@ -1,0 +1,31 @@
+# 配置语言及相应版本
+language: node_js
+node_js: stable
+
+# 缓存，可以节省集成的时间，这里我用了yarn，如果不用可以删除
+cache:
+  apt: true
+  yarn: true
+  directories:
+    - node_modules
+
+before_install:
+  - npm install -g hexo-cli
+
+install:
+  - yarn install
+
+#before_script:
+ # - npm install -g gulp
+
+script:
+  - hexo clean
+  - hexo generate
+
+after_script:
+  - cd ./dist
+
+# 项目所在分支
+branches:
+  only:
+  - master
