@@ -20,9 +20,10 @@ install:
  # - npm install -g gulp
 
 script:
-  - hexo clean
-  - hexo generate
+  # - hexo clean
+  # - hexo generate
   # - hexo deploy
+  - npm run deploy
 
 after_script:
   - cd ./public
@@ -30,7 +31,7 @@ after_script:
   - git config user.name "${U_NAME}"
   - git config user.email "${U_EMAIL}"
   - git add .
-  - git commit -m "Update tools"
+  - git commit -m "Update tools ${date}"
   - git push --force --quiet "https://${GH_TOKEN_B}@${GH_REF}" master:${P_BRANCH}
 
 # after_success:
