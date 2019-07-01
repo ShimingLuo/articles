@@ -43,8 +43,9 @@ branches:
 
 # 环境变量
 env:
-  - GH_REF=github.com/ShimingLuo/ShimingLuo.github.io.git
-  - GH_TOEKN=531af457b54a88739be28be10fea318dcaa92221
-  - P_BRANCH=master
-  - U_EMAIL=gavinluo99@gmail.com
-  - U_NAME=Gavin
+  global:
+    - GH_REF: github.com/ShimingLuo/ShimingLuo.github.io.git
+    - GH_TOEKN: 531af457b54a88739be28be10fea318dcaa92221
+    - P_BRANCH: master
+    - U_EMAIL: gavinluo99@gmail.com
+    - U_NAME: Gavin
