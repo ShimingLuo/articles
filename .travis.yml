@@ -45,7 +45,7 @@ branches:
 env:
   global:
     - GH_REF: github.com/ShimingLuo/ShimingLuo.github.io.git
-    - GH_TOKEN: 531af457b54a88739be28be10fea318dcaa92221
+    - GH_TOKEN: f98e8fff0cde9adfe1bb585d6eae4b7a6706f179
     - P_BRANCH: master
     - U_EMAIL: gavinluo99@gmail.com
     - U_NAME: Gavin
