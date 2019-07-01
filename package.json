@@ -11,15 +11,11 @@
     "deploy": "npm run sync && hexo clean && hexo g"
   },
   "yuqueConfig": {
-    "postPath": "source/_posts/yuque",
-    "cachePath": "yuque.json",
-    "mdNameFormat": "title",
-    "adapter": "hexo",
-    "concurrency": 5,
-    "baseUrl": "https://www.yuque.com/api/v2/",
-    "login": "blog",
+    "baseUrl": "https://www.yuque.com/api/v2",
+    "login": "gavinluo",
     "repo": "blog",
-    "onlyPublished": false
+    "mdNameFormat": "title",
+    "postPath": "source/_posts/yuque"
   },
   "dependencies": {
     "hexo": "^3.9.0",
