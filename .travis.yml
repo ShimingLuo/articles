@@ -31,8 +31,11 @@ after_script:
   - git config user.name "${U_NAME}"
   - git config user.email "${U_EMAIL}"
   - git add .
-  - git commit -m "Update tools ${date}"
-  - git push --force --quiet "https://${GH_TOKEN_B}@${GH_REF}" master:${P_BRANCH}
+  - git commit -m "Site updated：$(date)"
+  - git push --force --quiet "https://${GH_TOKEN_GITHUB}@${GH_REF}" master:${P_BRANCH}
+  - echo "GITHUB pushed"
+  - git push --force --quiet "https://${GH_AUTH_GITEE}@${GH_REF_GITEE}" master:${P_BRANCH}
+  - echo "GITEE pushed"
 
 # after_success:
 #   - cd ./public
@@ -45,9 +48,14 @@ branches:
 # 环境变量
 env:
   global:
+    # github
     - GH_REF: github.com/ShimingLuo/ShimingLuo.github.io.git
     - GH_TOKEN: f98e8fff0cde9adfe1bb585d6eae4b7a6706f179
-    - GH_TOKEN_B: shimingluo:19931225luo..
+    - GH_TOKEN_GITHUB: shimingluo:19931225luo..
+    # gitee
+    - GH_REF_GITEE: gitee.com:gitfuck99/blog.git
+    - GH_AUTH_GITEE: shimingluo:19931225luo..
+    # 分支
     - P_BRANCH: master
     - U_EMAIL: gavinluo99@gmail.com
-    - U_NAME: shimingluo
+    - U_NAME: Gavin
