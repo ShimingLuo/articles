@@ -53,7 +53,7 @@ env:
     - GH_TOKEN: f98e8fff0cde9adfe1bb585d6eae4b7a6706f179
     - GH_TOKEN_GITHUB: shimingluo:19931225luo..
     # gitee
-    - GH_REF_GITEE: gitee.com:gitfuck99/blog.git
+    - GH_REF_GITEE: gitee.com/gitfuck99/blog.git
     - GH_AUTH_GITEE: gavinluo99@gmail.com:19931225luo..
     # 分支
     - P_BRANCH: master
