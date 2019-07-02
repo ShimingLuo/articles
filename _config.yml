@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site 网站
-title: Hexo
-subtitle:
-description:
-keywords:
-author: John Doe
+title: 小猴子记录册
+subtitle: 记录点滴
+description: Hexo travis-ci GitPage 通过语雀发布自动化部署博客
+keywords: 明
+author: Gavin
 language:
 timezone:
 
 # URL 网址
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url:
+root:
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
