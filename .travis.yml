@@ -37,7 +37,7 @@ after_script:
   - git push --force --quiet "https://${GH_AUTH_GITEE}@${GH_REF_GITEE}" master:${P_BRANCH}
   - echo "GITEE pushed"
   - echo "开始触发更新Gitee Page服务"
-  - curl -X POST --header 'Content-Type: application/json;charset=UTF-8' 'https://gitee.com/api/v5/repos/gitfuck99/blog/pages/builds' -d '{"access_token":"1a56178e8749d9bb607202a93350dc04"}'
+  - curl -X POST --header "Content-Type: application/json;charset=UTF-8" "https://gitee.com/api/v5/repos/gitfuck99/blog/pages/builds" -d "{\"access_token\":\"1a56178e8749d9bb607202a93350dc04\"}"
 
 # after_success:
 #   - cd ./public
