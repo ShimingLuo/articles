@@ -36,13 +36,20 @@ after_script:
   - echo "GITHUB pushed"
   - git push --force --quiet "https://${GH_AUTH_GITEE}@${GH_REF_GITEE}" master:${P_BRANCH}
   - echo "GITEE pushed"
+
   - echo "备份MD文档文件"
+  - cd ../source/_posts
+  - git init
+  - git config user.name "${U_NAME}"
+  - git config user.email "${U_EMAIL}"
+  - git add .
+  - git commit -m "MD backup at：$(date)"
   - git push --force --quiet "https://${GH_AUTH_GITEE}@${GH_MD_REPO}" master:${P_BRANCH}
   - echo "完成备份"
-
-after_success:
+  
   - echo "开始触发更新Gitee Page服务"
   - curl -X POST --header "Content-Type: application/json;charset=UTF-8" "https://gitee.com/api/v5/repos/gitfuck99/blog/pages/builds" -d '{"access_token":"1a56178e8749d9bb607202a93350dc04"}'
+
 
 # 项目所在分支
 branches:
