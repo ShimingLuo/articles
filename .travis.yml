@@ -36,6 +36,9 @@ after_script:
   - echo "GITHUB pushed"
   - git push --force --quiet "https://${GH_AUTH_GITEE}@${GH_REF_GITEE}" master:${P_BRANCH}
   - echo "GITEE pushed"
+  - echo "备份MD文档文件"
+  - git push --force --quiet "https://${GH_AUTH_GITEE}@${GH_MD_REPO}" master:${P_BRANCH}
+  - echo "完成备份"
 
 after_success:
   - echo "开始触发更新Gitee Page服务"
@@ -56,6 +59,8 @@ env:
     # gitee
     - GH_REF_GITEE: gitee.com/gitfuck99/blog.git
     - GH_AUTH_GITEE: gitfuck99:19931225luo..
+    # MD文档的GIT repo
+    - GH_MD_REPO: gitee.com:gitfuck99/articles.git
     # 分支
     - P_BRANCH: master
     - U_EMAIL: gavinluo99@gmail.com
