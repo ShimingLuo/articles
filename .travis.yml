@@ -64,7 +64,8 @@ env:
     - GH_TOKEN: f98e8fff0cde9adfe1bb585d6eae4b7a6706f179
     - GH_TOKEN_GITHUB: shimingluo:19931225luo..
     # gitee
-    - GH_REF_GITEE: gitee.com/gitfuck99/blog.git
+    # - GH_REF_GITEE: gitee.com/gitfuck99/blog.git
+    - GH_REF_GITEE: gitee.com/gitfuck99/gitfuck99.git
     - GH_AUTH_GITEE: gitfuck99:19931225luo..
     # MD文档的GIT repo
     - GH_MD_REPO: gitee.com/gitfuck99/articles.git
