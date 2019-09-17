@@ -60,7 +60,7 @@ env:
     - GH_REF_GITEE: gitee.com/gitfuck99/blog.git
     - GH_AUTH_GITEE: gitfuck99:19931225luo..
     # MD文档的GIT repo
-    - GH_MD_REPO: gitee.com:gitfuck99/articles.git
+    - GH_MD_REPO: gitee.com/gitfuck99/articles.git
     # 分支
     - P_BRANCH: master
     - U_EMAIL: gavinluo99@gmail.com
