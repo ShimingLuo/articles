@@ -48,7 +48,7 @@ after_script:
   - echo "完成备份"
   
   - echo "开始触发更新Gitee Page服务"
-  - curl -X POST --header "Content-Type: application/json;charset=UTF-8" "https://gitee.com/api/v5/repos/gitfuck99/blog/pages/builds" -d '{"access_token":"1a56178e8749d9bb607202a93350dc04"}'
+  - curl -X POST --header "Content-Type: application/json;charset=UTF-8" "https://gitee.com/api/v5/repos/gitfuck99/gitfuck99/pages/builds" -d '{"access_token":"1a56178e8749d9bb607202a93350dc04"}'
 
 
 # 项目所在分支
